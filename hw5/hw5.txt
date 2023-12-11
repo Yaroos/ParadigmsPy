@@ -1,0 +1,8 @@
+list_sum([], 0).
+list_sum([Head|Tail], Sum) :-
+    list_sum(Tail, Rest),
+    Sum is Head + Rest.
+
+
+?
+sum_list([1, 2, 3, 4, 5, 6], Sum).
